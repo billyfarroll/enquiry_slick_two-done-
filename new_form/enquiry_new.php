@@ -19,14 +19,14 @@ $mail->SMTPDebug = 0; // 1 - 4 use 2 - most useful response - But if working fin
 $mail->SMTPAuth = true; // enable the SMTP authentication
 $mail->Host = 'smtp.live.com'; // SMTP server and backup server  
 $mail->Username = 'billy.farroll@hotmail.com';
-$mail->Password = 'PASSWORD HERE';
+$mail->Password = 'PASSWORD HERE'; // Put username password here
 $mail->SMTPSecure = 'tls'; // enable encryption - accepts TLS also  
 $mail->Port = 587; // port to connect - SSL 465 TLS TLS 587 - likely port numbers - 25, 465 or 587
 $mail->setFrom('billy.farroll@hotmail.com', 'Billy Farroll'); // This is where the email will come from 
 $mail->addAddress('billy.farroll@hotmail.com','Billy Farroll'); // This is where the email will be sent to
 $mail->addReplyTo("$email","$name"); 
 $mail->isHTML(true);
-$mail->Subject = 'Enquiry'; // Body content of the email BELOW
+$mail->Subject = 'Enquiry'; // Body content of the email BELOW - edit in simple HTML form 
 $mail->Body = "<center>
 <h2>New Enquiry!</h2>
 <hr/> 
